@@ -16,7 +16,7 @@
 <html>
 <head>
   <base href="/">
-  <title>Welcome to Faq Enquiry</title>
+  <title>Welcome to Faq Enquiry | About Us</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +44,7 @@ $("#contentParent").hide();
   $("#chatImgshow").click(function(){
     $("#contentParent").hide();
     $("#chatTogglerDiv").show();
-    location.href = "/";
+    location.href = "about_us.html";
   });
 });
 
@@ -102,7 +102,8 @@ $("#contentParent").hide();
 
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
-
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
@@ -110,7 +111,7 @@ $("#contentParent").hide();
 <link href="css/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons --> 
 <!-- //Custom Theme files -->  
 <!-- js --> 
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
 <!-- web-fonts -->
 <link href="//fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -150,7 +151,7 @@ $("#contentParent").hide();
 
     	<!-- //header -->  
 	<!-- banner -->
-	<div class="banner">
+	<div class="banner1">
       <div class="header-nav"><!-- header-three --> 	
         <nav class="navbar navbar-default">
           <div class="navbar-header">
@@ -166,8 +167,39 @@ $("#contentParent").hide();
               <li><a href="about_us.html" class="scroll">About</a></li>  
               <li><a href="#" id="show">Customer Support</a></li>  
               <li><a href="#" class="scroll">services</a></li>    
+              <li><a href="#" data-toggle="dropdown">Products<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Accounts</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Saving</a></li>
+                      <li><a href="#">Current</a></li>
+                      <li><a href="#">Salary</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Loans</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Personel</a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Car</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Cards</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Credit</a></li>
+                      <li><a href="#">Debit</a></li>
+                      <li><a href="#">Salary</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Insurance</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Life</a></li>
+                      <li><a href="#">Health</a></li>
+                      <li><a href="#">MOtor</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>	
               <li><a href="contact.html" class="scroll">Contact Us</a></li>
-			   <li><a href="login.html" class="scroll">Login</a></li>
             </ul>  
             <div class="clearfix"> </div>	
           </div>
@@ -181,6 +213,79 @@ $("#contentParent").hide();
 
   
 </div>
+<!-- about -->
+<div class=" w3ls-section" id="inner-about">
+		<div class="container">
+			<h3 class="h3-w3l">about us</h3>
+			<!-- about bottom-->
+			<div class="about-bottom">
+				<div class="col-md-6 about-w3right">
+					
+				</div>
+				<div class="col-md-6 about-w3left"> 
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h5 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>assumenda est cliche 
+									</a>
+								</h5>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+								<div class="panel-body panel_text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h5 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Itaque earum rerum
+									</a>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+								<div class="panel-body panel_text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h5 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Sed tincidunt lorem sed 
+									</a>
+								</h5>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+								<div class="panel-body panel_text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h5 class="panel-title asd">
+									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+										<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>excepturi sint cliche 
+									</a>
+								</h5>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour" aria-expanded="true">
+								<div class="panel-body panel_text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div> 
+				<div class="clearfix"> </div>
+			</div>		
+		</div>	
+			<!-- //about-bottom -->
 <div id="contentParent" class="responsive-columns-wrapper">
 
     <div id="chat-column-holder" class="responsive-column content-column">
@@ -199,8 +304,8 @@ $("#contentParent").hide();
       </div>
     </div>
 </div>
-<div id="chatTogglerDiv" style="opacity: 1;" title="Online support"><img id="chatTogglerImg" alt="Online Support" src="img/chatlogo.png"></div>
- 
+<div id="chatTogglerDiv" style="opacity: 1;" title="Online support"><img id="chatTogglerImg" alt="Online Support" src="img/chatbot1.png"></div>
+  <script src="js/modal.js"></script>
   <script src="js/common.js"></script>
   <script src="js/api.js"></script>
   <script src="js/conversation.js"></script>

@@ -1,0 +1,328 @@
+<!--
+ * Copyright 2017 IBM Corp. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the 'License'); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+-->
+<html>
+<head>
+  <base href="/">
+  <title>Welcome to Faq Enquiry | Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="conversation.svg" />
+  <meta property="og:title" content="Conversation Chat Simple" />
+  <meta property="og:description" content="Sample application that shows how to use the Conversation API to identify user intents" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"  rel="stylesheet">-->
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#contentParent").hide();
+    $("#hide").click(function(){
+        $("#contentParent").hide();
+    });
+    $("#show").click(function(){
+		$("#contentParent").show();
+    });
+
+  $("#chatTogglerDiv").click(function(){
+    $("#contentParent").show();
+    $("#chatTogglerDiv").hide();
+  });
+  $("#chatImgshow").click(function(){
+    $("#contentParent").hide();
+	$("#chatTogglerDiv").show();
+	location.href = "contact.html";
+  });
+});
+
+
+</script>
+  <style type="text/css">
+
+
+.stepwizard-step p {
+	margin-top: 10px;
+}
+
+.stepwizard-row {
+	display: table-row;
+}
+
+.stepwizard {
+	display: table;
+	width: 100%;
+	position: relative;
+}
+
+.stepwizard-step button[disabled] {
+	opacity: 1 !important;
+	filter: alpha(opacity = 100) !important;
+}
+
+.stepwizard-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 1.428571429;
+	border-radius: 15px;
+}
+
+
+.modal-header {
+	padding-bottom: 5px;
+}
+
+.nextBtn {
+    padding: 10px 16px;
+    font-size: 18px;
+}
+
+</style>
+
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons --> 
+<!-- //Custom Theme files -->  
+<!-- js --> 
+	<script src="js/jquery-2.2.3.min.js"></script>
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<!-- //web-fonts --> 
+</head>
+<body>
+	<!-- header -->
+	<div class="headerw3-agile"> 
+      <div class="header-w3mdl"><!-- header-two --> 
+        <div class="container"> 
+          <div class="agileits-logo navbar-left">
+            <h1><a href="index.html"><img src="images/e.png" alt="logo"/>Banking</a></h1> 
+          </div> 
+          <div class="agileits-hdright nav navbar-nav">
+            <div class="header-w3top"><!-- header-top --> 
+              <ul class="w3l-nav-top">
+                <li><i class="fa fa-phone"></i><span> 1800-xxx-xxx </span></li> 
+                <li><a href="mailto:mdrabank@mail.com"><i class="fa fa-envelope-o"></i><span>mail@mdrabank.com</span></a></li>
+              </ul>
+              <div class="clearfix"> </div> 	 
+            </div>
+            <div class="agile_social_banner">
+              <ul class="agileits_social_list">
+                <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>  
+  
+          </div>
+          <div class="clearfix"> </div> 
+        </div>	
+      </div>	
+    </div>
+
+    	<!-- //header -->  
+	<!-- banner -->
+	<div class="banner1">
+      <div class="header-nav"><!-- header-three --> 	
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              Menu 
+            </button> 
+          </div>
+          <!-- top-nav -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a id="hide" href="#" class="active">Home</a></li>
+              <li><a href="about_us.html" class="scroll">About</a></li>  
+              <li><a href="#" id="show">Customer Support</a></li>  
+              <li><a href="#" class="scroll">services</a></li>    
+              <li><a href="#" data-toggle="dropdown">Products<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Accounts</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Saving</a></li>
+                      <li><a href="#">Current</a></li>
+                      <li><a href="#">Salary</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Loans</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Personel</a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Car</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Cards</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Credit</a></li>
+                      <li><a href="#">Debit</a></li>
+                      <li><a href="#">Salary</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Insurance</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Life</a></li>
+                      <li><a href="#">Health</a></li>
+                      <li><a href="#">MOtor</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>	
+              <li><a href="contact.html" class="scroll">Contact Us</a></li>
+            </ul>  
+            <div class="clearfix"> </div>	
+          </div>
+        </nav>    
+      </div>
+      <!-- banner-text -->
+    </div>
+	<!-- contact -->
+	<div class="w3ls-section contact">
+		<div class="container"> 
+			<div class="w3ls-title">
+				<h2 class="h3-w3l">contact us</h2> 
+			</div>  
+			<div class="w3ls_map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2412003693917!2d73.919549414458!3d18.517999287410504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1922972e611%3A0x3ef119ff5d9f8837!2sAccenture+PDC+2C!5e0!3m2!1sen!2sin!4v1531394581678" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48306.05339877067!2d-74.245183970742!3d40.825144655510556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2555646a723a1%3A0x449f3366d017b214!2sMontclair%2C+NJ%2C+USA!5e0!3m2!1sen!2sin!4v1465991700675" style="border:0"></iframe>-->
+			</div>
+			<div class="contact_wthreerow agileits-w3layouts">
+				<div class="col-md-5 agileits_w3layouts_contact_gridl">
+					<div class="agileits_mail_grid_right_grid">
+						<h4>About Us</h4>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, 
+							ut aut reiciendis voluptatibus maiores alias consequatur.</p>
+					</div> 
+					<div class="agileits_mail_grid_right_grid">
+						<h4>Contact Info</h4>
+						<ul class="contact_info">
+							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Magarpatta City, Pune, Maharashtra 411028.</li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@mdrabank.com</a></li>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-7 w3l_contact_form">
+					<h4>Contact Form</h4> 
+					<form action="#" method="post">
+						<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" name="Phone" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
+						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //contact --> 
+
+<!--footer-->
+	 
+
+<!--//footer-->	
+	<!-- subscribe -->
+	<div class="modal bnr-modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<img src="images/logo.png" alt="logo"/>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div> 
+				<div class="modal-body modal-spa">
+					<p>FAQ Enquiry email newsletter provides subscribers with helpful articles on important issues in the banking industry, as well as news about events and more! To sign up for the newsletter, fill the below form.</p>
+					<form class=" wthree-subsribe" action="#" method="post"> 
+						<input type="text" name="name" placeholder="Your Name" required="">
+						<input type="email" name="email" placeholder="your Email" required="">
+						<input type="submit" value="SignUp"> 
+						<div class="clearfix"></div>
+					</form>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div id="contentParent" class="responsive-columns-wrapper">
+
+			<div id="chat-column-holder" class="responsive-column content-column">
+			  <div class="chat-column">
+				  <div class="modal-header">
+					  <button id="chatImgshow" type="button" title="Close" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Online support</h4>
+					</div>
+				<div id="scrollingChat"></div>
+				<label for="textInput" class="inputOutline">
+				  <input id="textInput" class="input responsive-column"
+					placeholder="Type something" type="text"
+					onkeydown="/*globals CanvasJS */
+					ConversationPanel.inputKeyDown(event, this)">
+				</label>
+			  </div>
+			</div>
+		</div>
+		<div id="chatTogglerDiv" style="opacity: 1;" title="Online support"><img id="chatTogglerImg" alt="Online Support" src="img/chatbot1.png"></div>
+
+	<!-- //subscribe --> 
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/api.js"></script>
+	<script src="js/conversation.js"></script>
+	<script src="js/global.js"></script>
+</body>
+</html>

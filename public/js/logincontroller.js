@@ -24,7 +24,7 @@ var app = angular.module('myApp', []);
                 console.log("Login");
                 $scope.showError = false;
 				$scope.userLoggedin=true;
-                $window.location.href = '/index.html';
+                $window.location.href = '/dashboard.html';
               }
               else{
                 console.log("Failed");
